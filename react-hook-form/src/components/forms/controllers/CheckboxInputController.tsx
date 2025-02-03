@@ -1,12 +1,12 @@
 import { cn } from "@/lib/utils";
 import { useFormContext, Controller } from "react-hook-form";
 
-type TInputProps = {
+type TControllerProps = {
   name: string;
   label: string;
 }
 
-export const CheckboxInputController = ({label, name}: TInputProps) => {
+export const CheckboxInputController = ({label, name}: TControllerProps) => {
   const { control } = useFormContext();
 
   return (

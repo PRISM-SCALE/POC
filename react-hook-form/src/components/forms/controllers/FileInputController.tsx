@@ -1,13 +1,14 @@
 import { cn } from "@/lib/utils";
 import { useFormContext, Controller } from "react-hook-form";
 
-type TInputProps = {
+
+type TControllerProps = {
   name: string;
   label: string;
   accept?: string;
 }
 
-export const FileInputController = ({label, name, accept}: TInputProps) => {
+export const FileInputController = ({label, name, accept}: TControllerProps) => {
   const { control } = useFormContext();
 
   return (

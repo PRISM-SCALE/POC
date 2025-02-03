@@ -1,14 +1,15 @@
 import { cn } from "@/lib/utils";
 import { useFormContext, Controller } from "react-hook-form";
 
-type TInputProps = {
+
+type TControllerProps = {
   name: string;
   label: string;
   placeholder?: string;
   type?: "text" | "number" | "password";
 }
 
-export const TextInputController = ({label, name, placeholder, type = 'text'}: TInputProps) => {
+export const TextInputController = ({label, name, placeholder, type = 'text'}: TControllerProps) => {
 
   const { control } = useFormContext();
 

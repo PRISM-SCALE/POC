@@ -1,5 +1,6 @@
-import FormProvider from "@/components/RHF/FormProvider"
+import UserForm from "@/components/forms/UserForm";
 
-const Home = () => <FormProvider />;
+
+const Home = () => <UserForm />;
 
 export default Home;

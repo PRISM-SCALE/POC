@@ -1,14 +1,15 @@
 import { cn } from "@/lib/utils";
 import { useFormContext, Controller } from "react-hook-form";
 
-type TInputProps = {
+
+type TControllerProps = {
   name: string;
   label: string;
   placeholder?: string;
   options: { value: string; label: string }[];
 }
 
-export const SelectInputController = ({label, name, placeholder, options}: TInputProps) => {
+export const SelectInputController = ({label, name, placeholder, options}: TControllerProps) => {
 
   const { control } = useFormContext();
 
